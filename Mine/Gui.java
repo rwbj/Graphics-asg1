@@ -15,25 +15,21 @@ class Gui extends JFrame{
 	JButton jbn, jbw, jbs, jbe;
 	JButton[] lbl;
 
-	public Gui6() {
+	public Gui(String img, int n1, int n2, int n3, int n4) {
         
         p2 = new MYJPanel();
-        
-        png
+		p2.setLnPts(n1,n2,n3,n4);
 
-		/*try {
-    			p2.img = ImageIO.read(new File("./a0.png"));
+		try {
+			//p2.img = ImageIO.read(new File("./bg.png"));
+			p2.img = ImageIO.read(new File("./"+img));
 		} catch (IOException e) {
 			System.out.printf("img open failed\n");
 			e.printStackTrace();
 			System.exit(1);
-		}*/
+		}
 
-        //p2.setSize(p2.img.getWidth(), p2.img.getHeight());
-        
-        p2.setSize(setSize(1040,551);
-
-        p2.setRGB
+        p2.setSize(p2.img.getWidth(), p2.img.getHeight());
 
 		this.add(p2);
 	}
